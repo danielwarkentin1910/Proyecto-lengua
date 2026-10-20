@@ -1,85 +1,129 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ñe'ery · Proyectos de Lengua</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap');
-:root{--b:#173f5f;--y:#f4d35e;--c:#f7f1e5;--br:#6d513b;--w:#fffdf8;--l:#d9cfbf;--i:#17232d}
-*{box-sizing:border-box}body{margin:0;background:var(--c);color:var(--i);font-family:'DM Sans',Arial,sans-serif}
-a{color:inherit;text-decoration:none}nav{position:sticky;top:0;background:#f7f1e5ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--l);z-index:5}
-nav div,main,.band div,footer div{max-width:1180px;margin:auto}nav div{padding:16px 24px;display:flex;justify-content:space-between}
-.logo{font-weight:700;letter-spacing:.12em;color:var(--b)}.navlinks{display:flex;gap:22px;font-size:13px;font-weight:700}
-.hero{padding:90px 24px 70px;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;right:5%;top:45px;width:320px;height:320px;background:var(--y);border-radius:50%;z-index:-1}
-.kicker,small{letter-spacing:.15em;font-weight:700;color:var(--br);font-size:11px}
-h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--b)}h1{font-size:clamp(50px,9vw,100px);line-height:.9;margin:16px 0;max-width:850px}
-.hero p{max-width:650px;font-size:18px;color:#555;margin-top:28px}
-.band{background:var(--b);color:white}.band div{padding:28px 24px;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.band strong{font:700 28px 'Playfair Display',Georgia,serif}
-section.content{padding:75px 24px}.head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:32px}
-h2{font-size:48px;margin:8px 0}.filters{display:flex;flex-wrap:wrap;gap:7px}
-button{border:1px solid var(--l);background:transparent;border-radius:30px;padding:9px 13px;font-weight:700;cursor:pointer}
-button.active,button:hover{background:var(--b);color:#fff;border-color:var(--b)}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--w);border:1px solid var(--l);border-radius:20px;overflow:hidden;transition:.2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #173f5f18}.top{background:var(--b);color:white;padding:15px 20px;display:flex;justify-content:space-between}
-.top span{font-size:10px;letter-spacing:.12em;border:1px solid #ffffff55;border-radius:20px;padding:5px 8px}
-.body{padding:25px}.body small{display:block}h3{font-size:29px;line-height:1.08;margin:10px 0}.body p{color:#5a605e;min-height:55px;font-size:14px}
-.body a{display:inline-block;margin-top:18px;color:var(--b);font-size:12px;font-weight:700;border-bottom:2px solid var(--y);padding-bottom:4px}
-.about{background:#e9dfcf;padding:70px 24px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;max-width:1180px;margin:auto}
-.about p{color:#555}footer{background:#0e2e47;color:white;padding:35px 24px;font-size:12px}
-footer div{display:flex;justify-content:space-between;gap:20px}
-@media(max-width:750px){nav div{padding:14px 16px}.navlinks{gap:10px}.hero,section.content,.about{padding-left:18px;padding-right:18px}.hero{padding-top:60px}.hero:after{width:210px;height:210px;right:-50px}.band div{padding:25px 18px;display:block}.band span{display:block;margin-top:6px}.head{display:block}.filters{margin-top:20px}.grid,.about-grid{grid-template-columns:1fr}h2{font-size:40px}}
-</style></head>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111b2b">
+  <meta name="description" content="Una obra. Muchas formas de leerla. Proyecto de lengua dedicado a IONE, de Mario Escobar.">
+  <title>IONE — Una obra. Muchas formas de leerla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<nav><div><a class="logo" href="#">ÑE'ERY · PROYECTO DE LENGUA</a><span class="navlinks"><a href="#proyectos">Proyectos</a><a href="#sobre">Sobre</a></span></div></nav>
-<main>
-<section class="hero"><div class="kicker">LENGUA · CASTELLANO · GUARANÍ · 2026</div>
-<h1>NUESTROS<br>PROYECTOS<br>DE LENGUA.</h1><p>Un espacio para reunir y presentar nuestros trabajos de lectura, investigación, escritura, entrevistas y lengua guaraní.</p></section>
-<section class="band"><div><strong>Una mirada a nuestro idioma.</strong><span>8 proyectos reales reunidos en un solo lugar.</span></div></section>
-<section class="content" id="proyectos"><div class="head"><div><div class="kicker">PORTAFOLIO · 2026</div><h2>Proyectos</h2></div>
-<div class="filters"><button class="active" data-filter="todos">TODOS</button><button data-filter="lectura">LECTURA</button><button data-filter="guaraní">GUARANÍ</button><button data-filter="investigación">INVESTIGACIÓN</button><button data-filter="entrevistas">ENTREVISTAS</button></div></div>
-<div class="grid">
-<article class="card" data-cat="lectura">
-<div class="top"><b>01</b><span>IONE</span></div>
-<div class="body"><small>LECTURA</small><h3>Análisis del tiempo de IONE</h3><p>Orden, duración, frecuencia, analepsis, prolepsis y ritmo narrativo.</p>
-<a href="proyectos/01-analisis-tiempo-ione.pdf" target="_blank">VER PROYECTO ↗</a></div></article>
+  <div class="topline"><span>ARCHIVO LITERARIO · PROYECTO DE LENGUA</span><span>LECTURAS / 001</span></div>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#" aria-label="Inicio"><span class="brand-mark">I.</span><span>ARCHIVO <b>IONE</b></span></a>
+      <a class="nav-link" href="#analisis">Explorar análisis <span>↘</span></a>
+    </nav>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> MARIO ESCOBAR · LECTURA COLECTIVA</p>
+        <h1>Una obra.<br><em>Muchas formas</em><br>de leerla.</h1>
+        <p class="intro">Un recorrido por el universo de <i>IONE</i>: sus personajes, símbolos, conflictos y las ideas que se esconden detrás de la historia.</p>
+        <a class="cta" href="#analisis">Descubrir los trabajos <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Composición gráfica inspirada en una novela y un paisaje misterioso">
+        <div class="art-sun"></div><div class="art-moon"></div>
+        <div class="ridge ridge-back"></div><div class="ridge ridge-mid"></div><div class="ridge ridge-front"></div>
+        <div class="art-label">UNA LECTURA<br>EN OCHO MIRADAS</div>
+        <div class="art-index">I—VIII</div>
+      </div>
+    </div>
+    <div class="hero-foot"><span>UN PROYECTO SOBRE IONE</span><span>DESLIZÁ PARA EXPLORAR ↓</span></div>
+  </header>
 
-<article class="card" data-cat="lectura">
-<div class="top"><b>02</b><span>IONE</span></div>
-<div class="body"><small>LECTURA</small><h3>Análisis ideológico de IONE</h3><p>Valores, relaciones de poder, pensamiento crítico y visión del mundo.</p>
-<a href="proyectos/02-analisis-ideologico-ione.pdf" target="_blank">VER PROYECTO ↗</a></div></article>
+  <main>
+    <section class="intro-strip">
+      <p class="section-kicker">01 / EL ARCHIVO</p>
+      <div><h2>Una historia,<br><span>ocho perspectivas.</span></h2>
+      <p class="strip-copy">Cada trabajo se acerca a la novela desde una pregunta diferente. Elegí una mirada y abrí el documento completo.</p></div>
+      <div class="count"><strong>08</strong><span>TRABAJOS</span></div>
+    </section>
 
-<article class="card" data-cat="lectura">
-<div class="top"><b>03</b><span>IONE</span></div>
-<div class="body"><small>LECTURA</small><h3>Análisis psicológico del protagonista</h3><p>Deseos, conflictos, temores y mecanismos de defensa de Teseo.</p>
-<a href="proyectos/03-analisis-psicologico-ione.pdf" target="_blank">VER PROYECTO ↗</a></div></article>
+    <section class="library" id="analisis">
+      <div class="library-head">
+        <div><p class="section-kicker">02 / INVESTIGACIONES</p><h2>Explorá los análisis</h2></div>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar un tema..." aria-label="Buscar un tema"></label>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar trabajos">
+        <button class="filter active" data-filter="todos">Todos <span>08</span></button>
+        <button class="filter" data-filter="narrativa">Narrativa</button>
+        <button class="filter" data-filter="personajes">Personajes</button>
+        <button class="filter" data-filter="ideas">Ideas y sociedad</button>
+        <button class="filter" data-filter="lenguaje">Lenguaje</button>
+      </div>
+      <div class="cards" id="cards">
+        <article class="project-card" data-category="narrativa" data-search="tiempo narrativo flashback anticipaciones ritmo duración frecuencia">
+          <div class="card-top"><span class="number">01</span><span class="tag">NARRATIVA</span></div>
+          <div class="card-symbol symbol-time">↻</div>
+          <h3>El tiempo narrativo</h3>
+          <p>Cómo se organiza el tiempo de la historia: saltos temporales, recuerdos, anticipaciones y ritmo narrativo.</p>
+          <div class="card-bottom"><span>ANÁLISIS DE TIEMPO</span><a href="documentos/analisis-tiempo.pdf" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+        <article class="project-card featured" data-category="ideas" data-search="simbolismo montañas aislamiento viaje límites sombra Frank liberación crecimiento">
+          <div class="card-top"><span class="number">02</span><span class="tag">SÍMBOLOS</span></div>
+          <div class="card-symbol symbol-eye">◉</div>
+          <h3>Lo que los símbolos revelan</h3>
+          <p>Una lectura de los elementos simbólicos, el viaje, el aislamiento y las figuras de poder dentro de la novela.</p>
+          <div class="card-bottom"><span>ANÁLISIS SIMBÓLICO</span><a href="documentos/analisis-simbolico.pdf" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+        <article class="project-card" data-category="ideas" data-search="ideología valores autoridad libertad sociedad poder decisiones">
+          <div class="card-top"><span class="number">03</span><span class="tag">IDEAS Y VALORES</span></div>
+          <div class="card-symbol symbol-ideology">✳</div>
+          <h3>Ideología y valores</h3>
+          <p>Las ideas, los valores y las tensiones que orientan las decisiones de los personajes.</p>
+          <div class="card-bottom"><span>ANÁLISIS IDEOLÓGICO</span><a href="documentos/analisis-ideologico.pdf" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+        <article class="project-card" data-category="personajes" data-search="psicología emociones pensamientos conducta Teseo Ione">
+          <div class="card-top"><span class="number">04</span><span class="tag">INTERIORIDAD</span></div>
+          <div class="card-symbol symbol-psy">◌</div>
+          <h3>La dimensión psicológica</h3>
+          <p>Una aproximación a los pensamientos, emociones y comportamientos de los personajes.</p>
+          <div class="card-bottom"><span>ANÁLISIS PSICOLÓGICO</span><a href="documentos/analisis-psicologico.pdf" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+        <article class="project-card" data-category="personajes" data-search="personajes protagonistas secundarios relaciones características evolución">
+          <div class="card-top"><span class="number">05</span><span class="tag">PERSONAJES</span></div>
+          <div class="card-symbol symbol-people">◎</div>
+          <h3>Quienes habitan IONE</h3>
+          <p>Un recorrido por los personajes, sus características y el papel que cumplen en la historia.</p>
+          <div class="card-bottom"><span>ANÁLISIS DE PERSONAJES</span><a href="documentos/analisis-personajes.pdf" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+        <article class="project-card featured" data-category="narrativa" data-search="estructura narrativa capítulos 67 conflicto partes cronología gruñidores Místicus">
+          <div class="card-top"><span class="number">06</span><span class="tag">ESTRUCTURA</span></div>
+          <div class="card-symbol symbol-structure">⌘</div>
+          <h3>Cómo se construye la historia</h3>
+          <p>La organización de la novela, sus partes, el conflicto central y el recorrido de Teseo.</p>
+          <div class="card-bottom"><span>ANÁLISIS ESTRUCTURAL</span><a href="documentos/analisis-estructural.pdf" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+        <article class="project-card" data-category="lenguaje" data-search="lenguaje estilo vocabulario científico coloquial metáforas diálogos narración">
+          <div class="card-top"><span class="number">07</span><span class="tag">ESCRITURA</span></div>
+          <div class="card-symbol symbol-language">“ ”</div>
+          <h3>Lenguaje y estilo</h3>
+          <p>El vocabulario, los diálogos, las metáforas y los recursos que dan ritmo a la narración.</p>
+          <div class="card-bottom"><span>ANÁLISIS LINGÜÍSTICO</span><a href="documentos/analisis-linguistico.pdf" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+        <article class="project-card" data-category="ideas" data-search="sociología sociedad poder desigualdad privilegios recursos libros Frank jóvenes adultos">
+          <div class="card-top"><span class="number">08</span><span class="tag">SOCIEDAD Y PODER</span></div>
+          <div class="card-symbol symbol-society">⌁</div>
+          <h3>La sociedad después del cambio</h3>
+          <p>Las jerarquías, el acceso desigual a los recursos y las formas de autoridad entre los jóvenes.</p>
+          <div class="card-bottom"><span>ANÁLISIS SOCIOLÓGICO</span><a href="documentos/analisis-sociologico.docx" target="_blank" rel="noopener">Abrir trabajo ↗</a></div>
+        </article>
+      </div>
+      <p id="empty" class="empty" hidden>No encontramos trabajos con esa búsqueda. Probá con otra palabra.</p>
+      <div class="library-foot"><span>FIN DEL ARCHIVO ACTUAL</span><span>LOS NUEVOS TRABAJOS SE PUEDEN SUMAR AQUÍ ↗</span></div>
+    </section>
 
-<article class="card" data-cat="lectura">
-<div class="top"><b>04</b><span>IONE</span></div>
-<div class="body"><small>LECTURA</small><h3>Análisis de personajes de IONE</h3><p>Dimensiones físicas, psicológicas y sociales de los personajes.</p>
-<a href="proyectos/04-analisis-personajes-ione.pdf" target="_blank">VER PROYECTO ↗</a></div></article>
-
-<article class="card" data-cat="guaraní">
-<div class="top"><b>05</b><span>ÑE'ERY</span></div>
-<div class="body"><small>GUARANÍ</small><h3>Proyecto Ñe'ery · Ñeekuave'ê apo</h3><p>Proyecto creativo en guaraní sobre organización y servicios para eventos.</p>
-<a href="proyectos/05-proyecto-neery.pdf" target="_blank">VER PROYECTO ↗</a></div></article>
-
-<article class="card" data-cat="investigación">
-<div class="top"><b>06</b><span>PARAGUAY</span></div>
-<div class="body"><small>INVESTIGACIÓN</small><h3>Festividades religiosas del Paraguay</h3><p>Investigación sobre Semana Santa, Tañarandy, Kurusu Ara, Caacupé, San Juan y Navidad.</p>
-<a href="proyectos/06-festividades-religiosas-paraguay.docx" target="_blank">VER PROYECTO ↗</a></div></article>
-
-<article class="card" data-cat="guaraní">
-<div class="top"><b>07</b><span>GUARANÍ</span></div>
-<div class="body"><small>GUARANÍ</small><h3>GRWM · Texto instructivo en guaraní</h3><p>Texto instructivo de maquillaje presentado como proyecto de lengua guaraní.</p>
-<a href="proyectos/07-grwm-texto-instructivo-guarani.pdf" target="_blank">VER PROYECTO ↗</a></div></article>
-
-<article class="card" data-cat="entrevistas">
-<div class="top"><b>08</b><span>MAXITRAVEL</span></div>
-<div class="body"><small>ENTREVISTAS</small><h3>Entrevista a Jaime Santacruz</h3><p>Entrevista sobre turismo, destinos, documentación y organización de viajes.</p>
-<a href="proyectos/08-entrevista-jaime-santacruz.pdf" target="_blank">VER PROYECTO ↗</a></div></article>
-</div></section>
-<section class="about" id="sobre"><div class="about-grid"><div><div class="kicker">SOBRE</div><h2>Una colección de trabajos.</h2></div><div><p>Esta página funciona como un portafolio digital de proyectos realizados en el área de Lengua. Cada tarjeta abre el documento correspondiente.</p><p>La colección puede seguir creciendo durante el año.</p></div></div></section>
-</main><footer><div><span>Ñe'ery · Proyecto de Lengua</span><span>2026 · Portafolio escolar</span></div></footer>
-<script>
-const bs=document.querySelectorAll('button'),cs=document.querySelectorAll('.card');
-bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.classList.remove('active'));b.classList.add('active');let f=b.dataset.filter;cs.forEach(c=>c.style.display=(f==='todos'||c.dataset.cat===f)?'':'none')})
-</script></body></html>
+    <section class="note">
+      <span class="note-mark">“</span>
+      <div><p class="section-kicker">03 / UNA NOTA DE LECTURA</p><h2>Leer también es<br><em>hacer preguntas.</em></h2></div>
+      <p class="note-copy">Este archivo reúne distintas formas de observar una misma obra. No es una lectura única: es una conversación entre perspectivas.</p>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">I.</span><span>ARCHIVO <b>IONE</b></span></a><span>PROYECTO DE LENGUA · EDICIÓN DIGITAL</span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">VOLVER ARRIBA ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
